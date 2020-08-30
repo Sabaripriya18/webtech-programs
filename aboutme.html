@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<style>
+body {
+  background: #191828;
+  color: #efedef;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 100px; }
+h1 {
+  font-size: 40px;
+  line-height: 0.8em;
+  color: rgba(255,255,255,0.2);}
+h2 {
+  font-size: 30px;
+  line-height: 0.8em;
+  color: rgba(255,255,255,0.2);}
+a {
+    background: #fd264f;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    line-height: 1em;
+    margin: 0;
+    padding: 5px 110px;
+    position: fixed;
+    top: 20px;
+    right: -100px;
+    text-align: center;
+    text-decoration: none;
+    transform: rotate(45deg);
+}
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; }
+
+.tabs {
+  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  overflow: hidden; }
+  .tabs [class^="tab"] label,
+  .tabs [class*=" tab"] label {
+    color: #efedef;
+    cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 2rem 0;
+    text-align: center; }
+  .tabs [class^="tab"] [type="radio"],
+  .tabs [class*=" tab"] [type="radio"] {
+    border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+    .tabs [class*=" tab"] [type="radio"]:hover,
+    .tabs [class*=" tab"] [type="radio"]:focus {
+      border-bottom: 1px solid #fd264f; }
+    .tabs [class^="tab"] [type="radio"]:checked,
+    .tabs [class*=" tab"] [type="radio"]:checked {
+      border-bottom: 2px solid #fd264f; }
+    .tabs [class^="tab"] [type="radio"]:checked + div,
+    .tabs [class*=" tab"] [type="radio"]:checked + div {
+      opacity: 1; }
+    .tabs [class^="tab"] [type="radio"] + div,
+    .tabs [class*=" tab"] [type="radio"] + div {
+      display: block;
+      opacity: 0;
+      padding: 2rem 0;
+      width: 90%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+  .tabs .tab-2 {
+    width: 50%; }
+    .tabs .tab-2 [type="radio"] + div {
+      width: 200%;
+      margin-left: 200%; }
+    .tabs .tab-2 [type="radio"]:checked + div {
+      margin-left: 0; }
+    .tabs .tab-2:last-child [type="radio"] + div {
+      margin-left: 100%; }
+    .tabs .tab-2:last-child [type="radio"]:checked + div {
+      margin-left: -100%; }
+</style>
+<html>
+<h1>
+    HELLO FROM SABARI PRIYA !<br>
+    <h2> Get to know me</h2>
+</h1>
+
+<div class="tabs">
+  <div class="tab-2">
+    <label for="tab2-1">ABOUT ME</label>
+    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+    <div>
+      <h4>ABOUT ME</h4>
+      <p>Hey! This is Sabari Priya. I'm currently pursuing my Bachelors Degree in Information Technology at Thiagarajar College of Engineering. My areas of interest are Data science, Deep Learning and neural networks,Datastructures and algorithms. I have done projects in database management systems, convolutional neural networks and object oriented programming. </p>
+	<p>Okay, I'm done with my technical introduction. Let me tell you more about myself.</p>
+	<p>I'm very much into astronomy and philosophy kinda stuffs. I find these more intriguing and they constantly put me in awe. I could talk about space and stars all day and would be very delighted to hear people's theories and perspectives on LIFE and cosmos. With the very few brain cells I have, I sure do a lot of overthinking about the things I've experienced.</p>
+	<p>I read a lot of non-fiction stuff. I can't honestly reason out my distance for fictional stuff since childhood. As I've dove into a technology in academics, I started missing biological sciences and started reading more on Darwinism and genetic theories. Though I'm very keen and into science for the whole time, the unanswered questions still keeps alive in me the faith in God.</p>
+	<p> I totally love learning new stuffs, be it technical, artforms or whatever. It gives me cosmic pleasure seeing me become the better person I've become than the previous day.</p>
+	<p> I could keep on writing but I guess I'll keep it low-key here.<p>
+    </div>
+  </div>
+  <div class="tab-2">
+    <label for="tab2-2">CONTACT</label>
+    <input id="tab2-2" name="tabs-two" type="radio">
+    <div>
+      <h4>LETS GET CONNECTED !</h4>
+      <p> Dont be a stranger, lets talk about science and stuff .</p>
+	<p>Email: kp.sabaripriya@gmail.com</p>
+	<p>Phone: 7373061242 </p>
+    </div>
+  </div>
+</div>
+</html>
